@@ -1,0 +1,446 @@
+/*
+ * ClearURLs (Manifest V3 port)
+ * Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+ * Copyright (c) 2026 ClearURLs MV3 port contributors
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+ * Shared stylesheet for the extension pages (replaces the bundled Bootstrap build).
+ */
+:root {
+    --page-bg-color: #fff;
+    --page-fg-color: #15141a;
+    --muted-fg-color: #6c757d;
+    --input-bg-color: #fff;
+    --input-border-color: #8f8f9d;
+    --input-fg-color: #15141a;
+    --card-bg-color: #f5f5f7;
+    --navbar-bg-color: #343a40;
+    --navbar-fg-color: #fff;
+    --brand-color: #FF7800;
+    --stripe-bg-color: rgba(0, 0, 0, 0.04);
+    --border-color: #dee2e6;
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --page-bg-color: #23222b;
+        --page-fg-color: #fbfbfe;
+        --muted-fg-color: #b1b1b9;
+        --input-bg-color: #42414d;
+        --input-border-color: #8f8f9d;
+        --input-fg-color: #fbfbfe;
+        --card-bg-color: #2f2e38;
+        --stripe-bg-color: rgba(255, 255, 255, 0.05);
+        --border-color: #4a4956;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-bg-color);
+    color: var(--page-fg-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-fg-color);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.brand {
+    color: var(--brand-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.small-version {
+    font-size: 10px;
+    background-color: var(--warning-color);
+    color: #212529;
+    border-radius: 3px;
+    padding: 1px 5px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px 24px;
+}
+
+.container.narrow {
+    max-width: 560px;
+}
+
+.container.wide {
+    max-width: 1400px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: var(--muted-fg-color);
+}
+
+.text-info {
+    color: var(--info-color);
+}
+
+.text-danger {
+    color: var(--danger-color);
+}
+
+.text-success {
+    color: var(--success-color);
+}
+
+h4, h5 {
+    margin: 16px 0 8px;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--muted-fg-color);
+    transition: opacity 0.15s;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.88;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.btn-sm {
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: #212529;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    opacity: 1;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    direction: ltr;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-group > label.bold {
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: var(--input-bg-color);
+    border: solid 1px var(--input-border-color);
+    border-radius: 4px;
+    color: var(--input-fg-color);
+}
+
+.form-control:focus {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 1px;
+}
+
+.form-control[readonly] {
+    opacity: 0.85;
+}
+
+input[type="color"] {
+    width: 64px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background: var(--input-bg-color);
+    cursor: pointer;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+}
+
+.progress {
+    display: flex;
+    height: 16px;
+    overflow: hidden;
+    background-color: var(--stripe-bg-color);
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+    transition: width 0.3s;
+}
+
+.bg-danger {
+    background-color: var(--danger-color);
+}
+
+.bg-info {
+    background-color: var(--info-color);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--page-fg-color);
+}
+
+table.table th,
+table.table td {
+    border: 1px solid var(--border-color);
+    padding: 6px 8px;
+    vertical-align: top;
+    text-align: left;
+    word-break: break-all;
+}
+
+table.table th {
+    cursor: default;
+    white-space: nowrap;
+}
+
+table.table th.sortable {
+    cursor: pointer;
+}
+
+table.table tbody tr:nth-child(odd) {
+    background-color: var(--stripe-bg-color);
+}
+
+.table-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.table-controls label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.table-controls select,
+.table-controls input[type="search"] {
+    padding: 4px 8px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    color: var(--input-fg-color);
+    font-family: inherit;
+}
+
+.pagination {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    border: 1px solid var(--border-color);
+    background: var(--card-bg-color);
+    color: var(--page-fg-color);
+    border-radius: 4px;
+    padding: 3px 9px;
+    cursor: pointer;
+}
+
+.pagination button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.pagination button.active {
+    background: var(--brand-color);
+    color: #fff;
+    border-color: var(--brand-color);
+}
+
+.icon-link {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: var(--page-fg-color);
+}
+
+.icon-link:hover {
+    color: var(--brand-color);
+}
+
+#donate {
+    transition: 0.3s;
+    opacity: 0.8;
+    color: #ffa500;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#donate:hover {
+    opacity: 1;
+}
+
+.status-line {
+    font-size: 12px;
+    color: var(--muted-fg-color);
+    margin-top: 6px;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 140px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 16px 0;
+}

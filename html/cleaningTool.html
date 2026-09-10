@@ -1,0 +1,57 @@
+<!--
+ClearURLs (Manifest V3 port)
+Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+Copyright (c) 2026 ClearURLs MV3 port contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cleaning tool from ClearURLs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="/img/clearurls.svg">
+    <link rel="stylesheet" href="../css/core.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">
+            <img src="../img/clearurls.svg" alt="">
+            <span>
+                <span class="brand" id="page_title"></span><br>
+                <span class="small-version" id="version"></span>
+            </span>
+        </span>
+    </nav>
+
+    <div class="container narrow text-center">
+        <h4 id="cleaning_tool_description"></h4>
+        <br>
+        <div class="form-group">
+            <label for="dirtyURLs" id="cleaning_tool_dirty_urls_label"></label>
+            <textarea id="dirtyURLs" name="dirtyURLs" class="form-control" rows="8" cols="60"></textarea>
+        </div>
+        <p>
+            <button type="button" id="cleaning_tool_btn" class="btn btn-success" title="Clean the URLs"></button>
+        </p>
+        <div class="form-group">
+            <label for="cleanURLs" id="cleaning_tool_clean_urls_label"></label>
+            <textarea id="cleanURLs" name="cleanURLs" class="form-control" rows="8" cols="60" readonly></textarea>
+        </div>
+    </div>
+
+    <script type="module" src="../js/cleaning_tool.js"></script>
+</body>
+</html>

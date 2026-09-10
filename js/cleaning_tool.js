@@ -1,0 +1,54 @@
+/*
+ * ClearURLs (Manifest V3 port)
+ * Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+ * Copyright (c) 2026 ClearURLs MV3 port contributors
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+import { translate, bg, handleError, writeVersion } from './common.js';
+
+/**
+ * Cleans all URLs line by line in the textarea.
+ */
+async function cleanURLs() {
+    const cleanTArea = document.getElementById('cleanURLs');
+    const dirtyTArea = document.getElementById('dirtyURLs');
+    const urls = dirtyTArea.value.split('\n');
+
+    try {
+        const cleaned = await Promise.all(urls.map((url) => url.trim() === '' ? '' : bg('pureCleaning', url.trim())));
+        cleanTArea.value = cleaned.join('\n');
+    } catch (error) {
+        handleError(error);
+    }
+}
+
+/**
+ * Set the text for the UI.
+ */
+function setText() {
+    document.title = translate('cleaning_tool_page_title');
+    document.getElementById('page_title').textContent = translate('cleaning_tool_page_title');
+    document.getElementById('cleaning_tool_description').textContent = translate('cleaning_tool_description');
+    document.getElementById('cleaning_tool_btn').textContent = translate('cleaning_tool_btn');
+    document.getElementById('cleaning_tool_dirty_urls_label').textContent = translate('cleaning_tool_dirty_urls_label');
+    document.getElementById('cleaning_tool_clean_urls_label').textContent = translate('cleaning_tool_clean_urls_label');
+}
+
+(function init() {
+    writeVersion();
+    setText();
+    document.getElementById('cleaning_tool_btn').onclick = cleanURLs;
+})();

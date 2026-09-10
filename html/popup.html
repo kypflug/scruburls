@@ -1,0 +1,127 @@
+<!--
+ClearURLs (Manifest V3 port)
+Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+Copyright (c) 2026 ClearURLs MV3 port contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ClearURLs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/switch.css">
+    <style>
+        body {
+            min-width: 300px;
+            max-width: 360px;
+        }
+
+        .container {
+            padding: 0 12px 12px;
+        }
+
+        .navbar {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">
+            <img src="../img/clearurls.svg" alt="">
+            <span>
+                <span class="brand">ClearURLs</span><br>
+                <span class="small-version" id="version"></span>
+            </span>
+        </span>
+        <a id="donate" target="_blank" rel="noopener noreferrer" href="https://www.paypal.me/KevinRoebert" title="">&#10084;</a>
+    </nav>
+
+    <div class="container">
+        <div class="text-center" id="references_section">
+            <a id="cleaning_tools" class="icon-link" target="_blank" title="Cleaning tool">&#128295;</a>
+            <a id="settings" class="icon-link" target="_blank" title="Settings">&#9881;</a>
+        </div>
+
+        <div id="config_section">
+            <h5><b id="configs_head"></b></h5>
+            <label class="switch switch-row">
+                <input type="checkbox" id="globalStatus">
+                <span class="slider round"></span>
+                <span class="switch-label" id="configs_switch_filter"></span>
+            </label>
+            <label class="switch switch-row">
+                <input type="checkbox" id="logging">
+                <span class="slider round"></span>
+                <span class="switch-label" id="configs_switch_log"></span>
+            </label>
+            <label class="switch switch-row">
+                <input type="checkbox" id="tabcounter">
+                <span class="slider round"></span>
+                <span class="switch-label" id="configs_switch_badges"></span>
+            </label>
+            <label class="switch switch-row">
+                <input type="checkbox" id="statistics">
+                <span class="slider round"></span>
+                <span class="switch-label" id="configs_switch_statistics"></span>
+            </label>
+        </div>
+
+        <div id="statistic_section">
+            <h5><b id="statistics_head"></b></h5>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" id="progress_blocked"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 100%" id="progress_non_blocked"></div>
+            </div>
+            <br>
+            <div class="stat-row">
+                <span id="statistics_elements"></span>
+                <span class="text-info" id="statistics_total_elements"></span>
+            </div>
+            <div class="stat-row">
+                <span id="statistics_blocked"></span>
+                <span class="text-danger" id="statistics_value"></span>
+            </div>
+            <div class="stat-row">
+                <span id="statistics_percentage"></span>
+                <span class="text-success" id="statistics_value_global_percentage"></span>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="button" id="reset_counter_btn" class="btn btn-danger btn-sm"></button>
+            </div>
+        </div>
+
+        <div id="status_section">
+            <h5><b id="rules_status_head"></b></h5>
+            <div class="text-center">
+                <a href="https://gitlab.com/ClearURLs/rules/-/commits/master/data.min.json" id="hashStatus"
+                   class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer"></a>
+                <button type="button" id="check_updates_btn" class="btn btn-default btn-sm" title="Check for rule updates now">&#8635;</button>
+            </div>
+            <div class="status-line text-center" id="dnr_status"></div>
+        </div>
+
+        <div id="log_section">
+            <br>
+            <a id="loggingPage" target="_blank" class="btn btn-default btn-sm btn-block"></a>
+        </div>
+    </div>
+
+    <script type="module" src="../js/popup.js"></script>
+</body>
+</html>

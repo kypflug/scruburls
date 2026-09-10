@@ -1,0 +1,143 @@
+<!--
+ClearURLs (Manifest V3 port)
+Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+Copyright (c) 2026 ClearURLs MV3 port contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings from ClearURLs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="/img/clearurls.svg">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/switch.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">
+            <img src="../img/clearurls.svg" alt="">
+            <span>
+                <span class="brand" id="page_title"></span><br>
+                <span class="small-version" id="version"></span>
+            </span>
+        </span>
+    </nav>
+
+    <div class="container narrow">
+        <div class="btn-group">
+            <button type="button" id="reset_settings_btn" class="btn btn-danger"></button>
+            <button type="button" id="export_settings_btn" class="btn btn-success">
+                &#11015; <span id="export_settings_btn_text"></span>
+            </button>
+            <span id="import_settings_btn" class="btn btn-success fileinput-button">
+                &#11014; <span id="import_settings_btn_text"></span>
+                <input type="file" name="file" id="importSettings" accept=".conf,.json,application/json">
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label for="badged_color" id="badged_color_label"></label>
+            <input type="color" id="badged_color" name="badged_color" value="#ffa500">
+        </div>
+
+        <div class="form-group">
+            <label for="ruleURL" id="rule_url_label"></label>
+            <input type="url" id="ruleURL" value="" name="ruleURL" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="hashURL" id="hash_url_label"></label>
+            <input type="url" id="hashURL" value="" name="hashURL" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="types" id="types_label"></label>
+            <input type="text" id="types" value="" name="types" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="logLimit" id="logLimit_label"></label>
+            <input type="number" id="logLimit" value="" name="logLimit" min="0" max="5000" class="form-control">
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label class="bold" id="local_hosts_skipping"></label>
+            <label class="switch">
+                <input type="checkbox" id="localHostsSkipping">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="bold" id="domain_blocking_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="domainBlocking">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="bold" id="history_listener_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="historyListenerEnabled">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="bold" id="context_menu_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="contextMenuEnabled">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="bold" id="referral_marketing_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="referralMarketing">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="bold" id="ping_blocking_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="pingBlocking">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="form-group" id="etag_p">
+            <label class="bold" id="eTag_filtering_enabled"></label>
+            <label class="switch">
+                <input type="checkbox" id="eTagFiltering">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="text-center">
+            <button type="button" id="save_settings_btn" class="btn btn-success"></button>
+        </div>
+        <p class="status-line text-center" id="save_status"></p>
+
+        <hr>
+        <div class="card" id="dnr_card">
+            <b id="dnr_head"></b>
+            <div class="status-line" id="dnr_status"></div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/settings.js"></script>
+</body>
+</html>

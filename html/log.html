@@ -1,0 +1,101 @@
+<!--
+ClearURLs (Manifest V3 port)
+Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
+Copyright (c) 2026 ClearURLs MV3 port contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log from ClearURLs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="/img/clearurls.svg">
+    <link rel="stylesheet" href="../css/core.css">
+    <style>
+        td.url-cell {
+            max-width: 420px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 12px;
+        }
+
+        td.time-cell {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">
+            <img src="../img/clearurls.svg" alt="">
+            <span>
+                <span class="brand" id="page_title"></span><br>
+                <span class="small-version" id="version"></span>
+            </span>
+        </span>
+    </nav>
+
+    <div class="container wide">
+        <div class="btn-group">
+            <button type="button" id="reset_log_btn" class="btn btn-danger"></button>
+            <button type="button" id="export_log_btn" class="btn btn-success">
+                &#11015; <span id="export_log_btn_text"></span>
+            </button>
+            <span id="import_log_btn" class="btn btn-success fileinput-button">
+                &#11014; <span id="import_log_btn_text"></span>
+                <input type="file" name="file" id="importLog" accept=".json,application/json">
+            </span>
+        </div>
+
+        <div class="table-controls">
+            <label>
+                <span id="page_length_label">Show</span>
+                <select id="pageLength">
+                    <option value="10" selected>10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="1000">1000</option>
+                </select>
+            </label>
+            <label>
+                <span id="search_label">Search</span>
+                <input type="search" id="search" autocomplete="off">
+            </label>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table" id="logTable">
+                <thead>
+                    <tr>
+                        <th id="head_1"></th>
+                        <th id="head_2"></th>
+                        <th id="head_3"></th>
+                        <th id="head_4" class="sortable"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <div class="table-controls">
+            <span class="text-muted" id="table_info"></span>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/log.js"></script>
+</body>
+</html>
