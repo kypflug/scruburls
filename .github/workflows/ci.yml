@@ -16,5 +16,5 @@ jobs:
       - run: sh scripts/package.sh
       - uses: actions/upload-artifact@v4
         with:
-          name: clearurls-mv3
-          path: dist/clearurls-mv3.zip
+          name: scruburls
+          path: dist/scruburls.zip
