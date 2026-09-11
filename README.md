@@ -111,7 +111,7 @@ provider's rule.
 * **Fragments** (`#utm_source=…`) never reach the network; they are removed with
   `history.replaceState` after the navigation committed.
 * **Safety net**: after every top level navigation the final URL is re-checked with the original
-  engine. If something is left over (a provider whose regex RE2 does not support, a parameter written
+  engine. If something is left over (a provider whose regex RE2 cannot compile, a parameter written
   in a different case, collateral of an `allow` rule) the tab is navigated to the clean URL.
 * **Statistics, log and badge** are computed by running the original engine on every observed
   request (non blocking), exactly like the original add-on did. Requests that are part of a DNR
@@ -173,22 +173,34 @@ content/               Google / Yandex search result fixes (isolated + MAIN worl
 html/, js/, css/       popup, settings, log, cleaning tool, blocked page
 data/                  bundled rules
 _locales/              translations (from the original add-on)
+scripts/               update-rules.sh (refresh bundled rules), package.sh (build the zip)
 tests/                 node:test suites
+tests/e2e/             Playwright end-to-end check (see below)
 ```
 
 The `tests/helpers.js` module contains a small simulator of Chrome's rule evaluation which the
 compiler tests use to check that the generated rules produce the same result as the engine.
 
-## License
-
-LGPL-3.0-or-later, like the original. ClearURLs is Copyright (c) 2017-2025 Kevin Röbert; the ClearURLs name and logo belong to the ClearURLs project and are not used by ScrubURLs.
-The rule set is maintained by the ClearURLs project at
-[gitlab.com/ClearURLs/rules](https://gitlab.com/ClearURLs/rules).
-
 ### End-to-end check
 
 `tests/e2e/extension.e2e.mjs` loads the unpacked extension into Chromium with
 [Playwright](https://playwright.dev/), waits for the DNR rules to compile and verifies the
-cleaning against a local HTTP server (tracking parameters, Amazon, Google redirect tracker,
-domain blocking, fragments, History API, sub resources). It needs `playwright` on `NODE_PATH`
-and port 80 (or root); it is not part of `npm test`.
+cleaning against a local HTTP server: tracking parameters, the Amazon example, the Google
+redirect tracker, domain blocking, fragments, the History API and sub resources.
+
+```sh
+npm install --no-save playwright   # not a dependency of the extension itself
+npx playwright install chromium    # or set CHROME_PATH to an existing Chromium binary
+sudo node tests/e2e/extension.e2e.mjs
+```
+
+It binds port 80 so that the real provider patterns match (`www.amazon.com/...` rather than
+`www.amazon.com:8080/...`); without root it falls back to a random port and the Google redirect
+case cannot match. It is not part of `npm test`.
+
+
+## License
+
+LGPL-3.0-or-later, like the original. ClearURLs is Copyright (c) 2017-2025 Kevin Röbert. The
+ClearURLs name and logo belong to the ClearURLs project and are not used by ScrubURLs. The rule
+set is maintained by the ClearURLs project at [gitlab.com/ClearURLs/rules](https://gitlab.com/ClearURLs/rules).
