@@ -1,10 +1,10 @@
 #!/bin/sh
-# Builds dist/clearurls-mv3.zip, ready to be loaded unpacked or uploaded to the Chrome Web Store.
+# Builds dist/scruburls.zip, ready to be loaded unpacked or uploaded to the Chrome Web Store.
 set -eu
 cd "$(dirname "$0")/.."
 mkdir -p dist
-rm -f dist/clearurls-mv3.zip
-zip -qr dist/clearurls-mv3.zip \
+rm -f dist/scruburls.zip
+zip -qr dist/scruburls.zip \
     manifest.json background.js core content html js css img data _locales LICENSE \
     -x '*.DS_Store'
-echo "wrote dist/clearurls-mv3.zip"
+echo "wrote dist/scruburls.zip"

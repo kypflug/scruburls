@@ -1,9 +1,10 @@
-# <sub><img src="img/clearurls.svg" width="48" height="48"></sub> ClearURLs (Manifest V3)
+# <sub><img src="img/scruburls.svg" width="48" height="48"></sub> ScrubURLs
 
-A port of the [ClearURLs](https://github.com/ClearURLs/Addon) browser extension (v1.27.3) to
-Chrome **Manifest V3**.
+An **unofficial Manifest V3 port** of the [ClearURLs](https://github.com/ClearURLs/Addon) browser
+extension (based on ClearURLs 1.27.3). ScrubURLs is not affiliated with or endorsed by the ClearURLs
+project; the name and icon are different on purpose so nobody mistakes it for the original.
 
-ClearURLs removes tracking elements from URLs (`utm_*`, `fbclid`, `gclid`, Amazon's `ref=…` and
+ScrubURLs removes tracking elements from URLs (`utm_*`, `fbclid`, `gclid`, Amazon's `ref=…` and
 `pd_rd_*`, …), unwraps redirect trackers (Google, Facebook, Reddit, …) and blocks a handful of
 advertising domains. It uses the community maintained rule set from
 [gitlab.com/ClearURLs/rules](https://gitlab.com/ClearURLs/rules) and keeps it up to date automatically.
@@ -35,21 +36,21 @@ The extension is not in the Chrome Web Store (yet), so load it unpacked.
 ### From a clone
 
 ```sh
-git clone https://github.com/kypflug/clearurls-mv3.git
+git clone https://github.com/kypflug/scruburls.git
 ```
 
 1. Open `chrome://extensions` (in Edge: `edge://extensions`).
 2. Enable **Developer mode** (top right in Chrome, left sidebar in Edge).
-3. Click **Load unpacked** and select the cloned `clearurls-mv3` folder (the one containing
+3. Click **Load unpacked** and select the cloned `scruburls` folder (the one containing
    `manifest.json`).
-4. Pin the ClearURLs icon to the toolbar if you like; the popup shows the statistics and switches,
+4. Pin the ScrubURLs icon to the toolbar if you like; the popup shows the statistics and switches,
    the gear icon opens the settings page.
 
 To update, `git pull` and click the reload button on the extension's card in `chrome://extensions`.
 
 ### From the packaged zip
 
-1. Download `clearurls-mv3.zip` from the latest [CI run](../../actions) (artifact) or build it
+1. Download `scruburls.zip` from the latest [CI run](../../actions) (artifact) or build it
    yourself with `npm run package`.
 2. Unzip it and load the resulting folder with **Load unpacked** as described above.
 
@@ -153,7 +154,7 @@ that to top level navigations only; the DNR rules keep working regardless.
 ```sh
 npm test                 # unit tests (engine, compiler, storage, manifest) – no browser needed
 npm run update-rules     # refresh data/data.minify.json + rules.minify.hash from rules2.clearurls.xyz
-npm run package          # build dist/clearurls-mv3.zip
+npm run package          # build dist/scruburls.zip
 ```
 
 Layout:
@@ -180,7 +181,7 @@ compiler tests use to check that the generated rules produce the same result as 
 
 ## License
 
-LGPL-3.0-or-later, like the original. ClearURLs is Copyright (c) 2017-2025 Kevin Röbert.
+LGPL-3.0-or-later, like the original. ClearURLs is Copyright (c) 2017-2025 Kevin Röbert; the ClearURLs name and logo belong to the ClearURLs project and are not used by ScrubURLs.
 The rule set is maintained by the ClearURLs project at
 [gitlab.com/ClearURLs/rules](https://gitlab.com/ClearURLs/rules).
 

@@ -28,11 +28,11 @@
         "description": "String ini digunakan pada domain yang diblokir di log ClearURLs."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Log listener ditambahkan.",
+        "message": "[ScrubURLs]: Log listener ditambahkan.",
         "description": "String ini digunakan pada log startup ClearURLs."
     },
     "log_html_page_title": {
-        "message": "Log dari ClearURLs",
+        "message": "Log dari ScrubURLs",
         "description": "String ini digunakan sebagai header dalam laman log."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "String ini digunakan sebagai nama untuk tombol filter switch pada laman popup."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "Filters switch mengaktifkan fungsi membersihkan dari ClearURLs. Jika kamu menonaktifkan opsi ini, seluruh addon akan nonaktif",
+        "message": "Filters switch mengaktifkan fungsi membersihkan dari ScrubURLs. Jika kamu menonaktifkan opsi ini, seluruh addon akan nonaktif",
         "description": "String ini digunakan sebagai judul untuk tombol filter switch pada laman popup."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Tidak digunakan saat ini."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Simpan dalam disk.",
+        "message": "[ScrubURLs]: Simpan dalam disk.",
         "description": "String ini digunakan untuk memberitahu user, ClearURLs menyimpan aturan pada disk."
     },
     "core_error": {
-        "message": "[ClearURLs]: Addon tidak dapat mulai.",
+        "message": "[ScrubURLs]: Addon tidak dapat mulai.",
         "description": "String ini digunakan untuk memberitahu user, bahwa ClearURLs tidak dapat dimulai."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "String ini digunakan sebagai judul untuk tombol switch statistik pada laman popup."
     },
     "settings_html_page_title": {
-        "message": "Pengaturan ClearURLs",
+        "message": "Pengaturan ScrubURLs",
         "description": "String ini digunakan sebagai judul dalam laman pengaturan."
     },
     "badged_color_label": {
@@ -216,7 +216,7 @@
         "description": "String ini digunakan sebagai judul pada laman tool pembersih."
     },
     "cleaning_tool_description": {
-        "message": "Dengan alat ini Anda dapat menempelkan URL dan ClearURLs akan membersihkan URL setelah mengklik tombol hijau. Anda dapat menempelkan beberapa URL sekaligus, tetapi setiap URL harus berada di baris yang terpisah.",
+        "message": "Dengan alat ini Anda dapat menempelkan URL dan ScrubURLs akan membersihkan URL setelah mengklik tombol hijau. Anda dapat menempelkan beberapa URL sekaligus, tetapi setiap URL harus berada di baris yang terpisah.",
         "description": "String ini digunakan sebagai deskripsi alat pembersih."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Situs ini diblokir oleh <b>ClearURLs</b>",
+        "message": "Situs ini diblokir oleh <b>ScrubURLs</b>",
         "description": "String ini digunakan sebagai judul pada laman situs yang diblokir."
     },
     "blocked_html_body": {
-        "message": "Situs ini diblokir oleh Add-on <b>ClearURLs</b>, karena kami mengidentifikasi situs ini sebagai layanan periklanan dan/atau pelacakan. Untuk mengunjungi situs ini, Anda harus menonaktifkan sementara Add-on atau menonaktifkan pemblokiran domain di pengaturan ClearURLs. Setelah ini Anda dapat mengklik tombol di bawah ini untuk memuat halaman.",
+        "message": "Situs ini diblokir oleh Add-on <b>ScrubURLs</b>, karena kami mengidentifikasi situs ini sebagai layanan periklanan dan/atau pelacakan. Untuk mengunjungi situs ini, Anda harus menonaktifkan sementara Add-on atau menonaktifkan pemblokiran domain di pengaturan ScrubURLs. Setelah ini Anda dapat mengklik tombol di bawah ini untuk memuat halaman.",
         "description": "String ini digunakan sebagai body pada laman situs yang diblokir."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "String ini digunakan sebagai judul pada switch marketing referral"
     },
     "watchdog": {
-        "message": "[ClearURLs]: Watchdog telah mendeteksi masalah dan gagal sebanyak $TIMES$ kali.",
+        "message": "[ScrubURLs]: Watchdog telah mendeteksi masalah dan gagal sebanyak $TIMES$ kali.",
         "description": "String ini digunakan sebagai text untuk wacthdog",
         "placeholders": {
             "times": {

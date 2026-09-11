@@ -28,11 +28,11 @@
         "description": "Diese Zeichenfolge wird für blockierte Domäns im ClearURL-Protokoll verwendet."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Protokoll-Listener wurde hinzugefügt.",
+        "message": "[ScrubURLs]: Protokoll-Listener wurde hinzugefügt.",
         "description": "Diese Zeichenfolge wird beim Start des ClearURL-Protokolls verwendet."
     },
     "log_html_page_title": {
-        "message": "Protokoll von ClearURLs",
+        "message": "Protokoll von ScrubURLs",
         "description": "Diese Zeichenfolge wird als Überschrift auf der Protokollseite verwendet."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "Diese Zeichenfolge wird als Name für die Filterschaltfläche auf der Popup-Seite verwendet."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "Der Filter-Schalter aktiviert die Reinigungsfunktion von ClearURLs, wenn Sie die Funktion ausschalten, dann deaktivieren Sie das gesamte Add-on",
+        "message": "Der Filter-Schalter aktiviert die Reinigungsfunktion von ScrubURLs, wenn Sie die Funktion ausschalten, dann deaktivieren Sie das gesamte Add-on",
         "description": "Diese Zeichenfolge wird als Titel für die Filterschaltfläche auf der Popup-Seite verwendet."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Wird derzeit nicht verwendet."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Auf Festplatte gespeichert.",
+        "message": "[ScrubURLs]: Auf Festplatte gespeichert.",
         "description": "Diese Zeichenfolge teilt dem Benutzer mit, dass ClearURLs die Einstellungen auf der Festplatte gespeichert hat."
     },
     "core_error": {
-        "message": "[ClearURLs]: Das Add-on konnte nicht gestartet werden.",
+        "message": "[ScrubURLs]: Das Add-on konnte nicht gestartet werden.",
         "description": "Diese Zeichenfolge teilt dem Benutzer mit, dass ClearURLs nicht gestartet werden konnten."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "Diese Zeichenfolge wird als Titel für die Statistikschaltfläche auf der Popup-Seite verwendet."
     },
     "settings_html_page_title": {
-        "message": "Einstellungen von ClearURLs",
+        "message": "Einstellungen von ScrubURLs",
         "description": "Diese Zeichenfolge wird als Titel auf der Einstellungsseite verwendet."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "Diese Zeichenfolge wird als Name für das History-API-Listener-Label verwendet."
     },
     "cleaning_tool_page_title": {
-        "message": "Säuberungswerkzeug von ClearURLs",
+        "message": "Säuberungswerkzeug von ScrubURLs",
         "description": "Diese Zeichenfolge wird als Titel auf der Reinigungswerkzeugseite verwendet."
     },
     "cleaning_tool_description": {
-        "message": "Mit diesem Werkzeug können Sie URLs in die Textbox einfügen. Nach einem klick auf den grünen Button reinigt ClearURLs die Links. Sie können mehrer URLs auf einmal einfügen, jede URL muss aber in einer eigenen Zeile stehen.",
+        "message": "Mit diesem Werkzeug können Sie URLs in die Textbox einfügen. Nach einem klick auf den grünen Button reinigt ScrubURLs die Links. Sie können mehrer URLs auf einmal einfügen, jede URL muss aber in einer eigenen Zeile stehen.",
         "description": "Diese Zeichenfolge wird als Beschreibung des Reinigungswerkzeugs verwendet."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Diese Seite wurde von <b>ClearURLs</b> blockiert.",
+        "message": "Diese Seite wurde von <b>ScrubURLs</b> blockiert.",
         "description": "Diese Zeichenfolge wird als Titel auf der Hinweisseite für blockierte Seiten verwendet."
     },
     "blocked_html_body": {
-        "message": "Diese Seite wurde vom <b>ClearURLs</b>-Add-on blockiert, weil wir sie als Werbe- bzw. Trackingservice identifiziert haben. Um diese Seite zu besuchen, müssen Sie das Add-on temporär deaktivieren oder in den Einstellungen von ClearURLs das Domain-Blocking deaktivieren. Dann können Sie auf den untenstehenden Button klicken, um die Seite aufzurufen.",
+        "message": "Diese Seite wurde vom <b>ScrubURLs</b>-Add-on blockiert, weil wir sie als Werbe- bzw. Trackingservice identifiziert haben. Um diese Seite zu besuchen, müssen Sie das Add-on temporär deaktivieren oder in den Einstellungen von ScrubURLs das Domain-Blocking deaktivieren. Dann können Sie auf den untenstehenden Button klicken, um die Seite aufzurufen.",
         "description": "Diese Zeichenfolge wird als Mengentext auf der Hinweisseite für blockierte Seiten verwendet."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "Diese Zeichenkette wird als Titel für das Referral-Marketing verwendet."
     },
     "watchdog": {
-        "message": "[ClearURLs]: Der Watchdog hat ein Problem festgestellt und ist bereits das $TIMES$-te mal gescheitert.",
+        "message": "[ScrubURLs]: Der Watchdog hat ein Problem festgestellt und ist bereits das $TIMES$-te mal gescheitert.",
         "description": "Diese Zeichenkette wird als Text für den Watchdog verwendet.",
         "placeholders": {
             "times": {

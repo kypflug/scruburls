@@ -1,7 +1,7 @@
 /*
- * ClearURLs (Manifest V3 port)
+ * ScrubURLs (unofficial Manifest V3 port of ClearURLs)
  * Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
- * Copyright (c) 2026 ClearURLs MV3 port contributors
+ * Copyright (c) 2026 ScrubURLs contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -272,7 +272,7 @@ export class SettingsStore {
             const keys = [...this.pendingSaves];
             this.pendingSaves.clear();
             this.saveTimer = null;
-            this.save(keys).catch((e) => console.error('[ClearURLs ERROR]: ' + e));
+            this.save(keys).catch((e) => console.error('[ScrubURLs ERROR]: ' + e));
         }, delay);
     }
 

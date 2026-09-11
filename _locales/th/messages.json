@@ -28,11 +28,11 @@
         "description": "This string is used on blocked domains in the ClearURLs log."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: ได้เพิ่ม Log listener แล้ว",
+        "message": "[ScrubURLs]: ได้เพิ่ม Log listener แล้ว",
         "description": "This string is used on ClearURLs log startup."
     },
     "log_html_page_title": {
-        "message": "Log จาก ClearURLs",
+        "message": "Log จาก ScrubURLs",
         "description": "This string is used as header on the log page."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "This string is used as name for the filter switch button on the popup page."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "สวิตช์ตัวกรองเปิดใช้งานฟังก์ชันการทำความสะอาดของ ClearURLs ถ้าคุณปิดการทำงานตัวเลือกนี้ addon ทั้งหมดจะถูกปิด",
+        "message": "สวิตช์ตัวกรองเปิดใช้งานฟังก์ชันการทำความสะอาดของ ScrubURLs ถ้าคุณปิดการทำงานตัวเลือกนี้ addon ทั้งหมดจะถูกปิด",
         "description": "This string is used as title for the filter switch button on the popup page."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Currently not used."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: บันทึกลงบนดิสก์",
+        "message": "[ScrubURLs]: บันทึกลงบนดิสก์",
         "description": "This string is used to tell the user, that ClearURLs saved the settings on disk."
     },
     "core_error": {
-        "message": "[ClearURLs]: addon ไม่สามารถทำงานได้",
+        "message": "[ScrubURLs]: addon ไม่สามารถทำงานได้",
         "description": "This string is used to tell the user, that ClearURLs could not be started."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "This string is used as title for the statistics switch button on the popup page."
     },
     "settings_html_page_title": {
-        "message": "การตั้งค่า ClearURLs",
+        "message": "การตั้งค่า ScrubURLs",
         "description": "This string is used as title on the settings page."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "This string is used as name for the history API listener label."
     },
     "cleaning_tool_page_title": {
-        "message": "เครื่องมือ ClearURLs",
+        "message": "เครื่องมือ ScrubURLs",
         "description": "This string is used as title on the cleaning tool page."
     },
     "cleaning_tool_description": {
-        "message": "ด้วยเครื่องมือนี้คุณจะวางใน URLs และ ClearURLs ได้ด้วยการคลิกปุ่มสีเขียว คุณสามารถวางได้หลาย URLs ในคราวเดียวกัน แต่ว่าแต่ละ URL ต้องอยูแยกบรรทัดกัน",
+        "message": "ด้วยเครื่องมือนี้คุณจะวางใน URLs และ ScrubURLs ได้ด้วยการคลิกปุ่มสีเขียว คุณสามารถวางได้หลาย URLs ในคราวเดียวกัน แต่ว่าแต่ละ URL ต้องอยูแยกบรรทัดกัน",
         "description": "This string is used as description of the cleaning tool."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "ไซต์นี้ถูกจำกัดการเข้าถึงโดย <b>ClearURLs</b>",
+        "message": "ไซต์นี้ถูกจำกัดการเข้าถึงโดย <b>ScrubURLs</b>",
         "description": "This string is used as title on the blocked site page."
     },
     "blocked_html_body": {
-        "message": "ไซต์นี้ถูกจำกัดการเข้าถึงโดย <b>ClearURLs</b> Add-on, เนื่องจากเราตรวจจับว่าไซต์นี้เป็นการโฆษณาหรือมีการติดตาม หากต้องการเข้าชมไซต์คุณต้องปิด Add-on ชั่วคราวที่การตั้งค่า ClearURLs หลังจากนั้นคลิกปุ่มด้านล่างเพื่อโหลดหน้านี้อีกครั้ง",
+        "message": "ไซต์นี้ถูกจำกัดการเข้าถึงโดย <b>ScrubURLs</b> Add-on, เนื่องจากเราตรวจจับว่าไซต์นี้เป็นการโฆษณาหรือมีการติดตาม หากต้องการเข้าชมไซต์คุณต้องปิด Add-on ชั่วคราวที่การตั้งค่า ScrubURLs หลังจากนั้นคลิกปุ่มด้านล่างเพื่อโหลดหน้านี้อีกครั้ง",
         "description": "This string is used as body on the blocked site page."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "This string is used as title for the referral marketing switch"
     },
     "watchdog": {
-        "message": "[ClearURLs]: ระบบเฝ้าระวังตรวจพบปัญหาที่ล่มไปแล้ว $TIMES$ ครั้ง",
+        "message": "[ScrubURLs]: ระบบเฝ้าระวังตรวจพบปัญหาที่ล่มไปแล้ว $TIMES$ ครั้ง",
         "description": "This string is used as text for the watchdog",
         "placeholders": {
             "times": {

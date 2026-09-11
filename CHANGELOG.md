@@ -5,9 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [2.0.0] - 2026-09-10
 
-Manifest V3 port of ClearURLs 1.27.3.
+Initial release of ScrubURLs, an unofficial Manifest V3 port of ClearURLs 1.27.3.
 
 ### Changed
+- Renamed to ScrubURLs with its own icon, to avoid confusion with the original ClearURLs project.
 - Manifest V3: module service worker instead of a persistent background page.
 - Network level cleaning is performed by `declarativeNetRequest` dynamic rules compiled from the
   ClearURLs rule set (`core/dnr_compiler.js`).

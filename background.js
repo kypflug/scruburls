@@ -1,7 +1,7 @@
 /*
- * ClearURLs (Manifest V3 port)
+ * ScrubURLs (unofficial Manifest V3 port of ClearURLs)
  * Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
- * Copyright (c) 2026 ClearURLs MV3 port contributors
+ * Copyright (c) 2026 ScrubURLs contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -18,7 +18,7 @@
  */
 
 /*
- * Service worker of the ClearURLs Manifest V3 port.
+ * Service worker of ScrubURLs (unofficial Manifest V3 port of ClearURLs).
  *
  * Responsibilities:
  *  - load settings and rules, build the cleaning engine
@@ -65,7 +65,7 @@ const fixHistory = new Map();
 const translate = (key, ...placeholders) => chrome.i18n.getMessage(key, placeholders);
 
 function handleError(error) {
-    console.error('[ClearURLs ERROR]: ' + (error && error.message ? error.message : error));
+    console.error('[ScrubURLs ERROR]: ' + (error && error.message ? error.message : error));
 }
 
 /* ----------------------------------------------------------------------------
@@ -186,7 +186,7 @@ async function updateDynamicRules(force) {
     store.data.dnrSignature = signature;
     await store.save(['dnrCoverage', 'dnrStats', 'dnrSignature']);
 
-    console.log('[ClearURLs]: compiled ' + stats.rules + ' declarativeNetRequest rules (' + stats.regexRules + ' regex) for '
+    console.log('[ScrubURLs]: compiled ' + stats.rules + ' declarativeNetRequest rules (' + stats.regexRules + ' regex) for '
         + stats.compiledProviders + '/' + stats.providers + ' providers');
 }
 
@@ -201,7 +201,7 @@ async function applyDynamicRules(rules, removeRuleIds) {
         await dnr.updateDynamicRules({ removeRuleIds, addRules: rules });
         return 0;
     } catch (error) {
-        console.warn('[ClearURLs]: bulk rule update failed, retrying in batches: ' + error.message);
+        console.warn('[ScrubURLs]: bulk rule update failed, retrying in batches: ' + error.message);
     }
 
     await dnr.updateDynamicRules({ removeRuleIds });
@@ -217,7 +217,7 @@ async function applyDynamicRules(rules, removeRuleIds) {
                     await dnr.updateDynamicRules({ addRules: [rule] });
                 } catch (ruleError) {
                     failed++;
-                    console.warn('[ClearURLs]: dropping rule ' + rule.id + ': ' + ruleError.message, rule);
+                    console.warn('[ScrubURLs]: dropping rule ' + rule.id + ': ' + ruleError.message, rule);
                 }
             }
         }
@@ -343,7 +343,7 @@ function allowFix(tabId) {
 
     entry.count++;
     if (entry.count > FIX_LIMIT_PER_TAB) {
-        console.warn('[ClearURLs]: too many fixes for tab ' + tabId + ', giving up to prevent a loop');
+        console.warn('[ScrubURLs]: too many fixes for tab ' + tabId + ', giving up to prevent a loop');
         return false;
     }
     return true;
@@ -425,7 +425,7 @@ async function replaceState(tabId, frameId, url) {
             args: [url]
         });
     } catch (error) {
-        console.log('[ClearURLs] Error: ' + error.message);
+        console.log('[ScrubURLs] Error: ' + error.message);
     }
 }
 
@@ -471,8 +471,8 @@ chrome.tabs.onRemoved.addListener((tabId) => {
 async function setIcon() {
     const enabled = store.data.globalStatus;
     const path = enabled
-        ? { 16: '/img/clearurls_16x16.png', 32: '/img/clearurls_32x32.png', 48: '/img/clearurls_48x48.png', 128: '/img/clearurls_128x128.png' }
-        : { 128: '/img/clearurls_gray_128x128.png' };
+        ? { 16: '/img/scruburls_16x16.png', 32: '/img/scruburls_32x32.png', 48: '/img/scruburls_48x48.png', 128: '/img/scruburls_128x128.png' }
+        : { 128: '/img/scruburls_gray_128x128.png' };
     try {
         await chrome.action.setIcon({ path });
     } catch (error) {
@@ -624,7 +624,7 @@ async function checkForRulesUpdate(force = false) {
         await store.save(['ClearURLsData', 'dataHash', 'hashStatus']);
         await ensureDynamicRules();
     } catch (error) {
-        console.error('[ClearURLs]: Could not download the rules from the given URL due to the following error: ', error);
+        console.error('[ScrubURLs]: Could not download the rules from the given URL due to the following error: ', error);
         settings.lastRulesError = String(error && error.message ? error.message : error);
         if (!hasRulesData()) {
             await loadBundledRules();

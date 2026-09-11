@@ -28,11 +28,11 @@
         "description": "Cette ligne est pour les domaines bloqués dans le journal de ClearURLs."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Une base de données pour les URL a été ajoutée",
+        "message": "[ScrubURLs]: Une base de données pour les URL a été ajoutée",
         "description": "Cette ligne est utilisée au démarrage du journal de ClearURL."
     },
     "log_html_page_title": {
-        "message": "Journal d'événements de ClearURLs",
+        "message": "Journal d'événements de ScrubURLs",
         "description": "Cette ligne est utilisée comme en-tête sur la page de journal."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "Cette ligne est utilisée comme nom pour le bouton de changement de filtre de la page des options."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "L'interrupteur de l'extension active ou désactive la fonction de nettoyage de ClearURLs",
+        "message": "L'interrupteur de l'extension active ou désactive la fonction de nettoyage de ScrubURLs",
         "description": "Cette ligne est utilisée comme titre pour le bouton de changement de filtre sur la page des options."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "actuellement non utilisé."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Sauvegarder sur le disque.",
+        "message": "[ScrubURLs]: Sauvegarder sur le disque.",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "core_error": {
-        "message": "[ClearURLs]: L’extension n’a pas pu démarrer.",
+        "message": "[ScrubURLs]: L’extension n’a pas pu démarrer.",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "Sert à afficher la descriptio de la fonction sur la page des options."
     },
     "settings_html_page_title": {
-        "message": "Paramétrages de ClearURLs",
+        "message": "Paramétrages de ScrubURLs",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "cleaning_tool_page_title": {
-        "message": "Outil de nettoyage pour ClearURLs",
+        "message": "Outil de nettoyage pour ScrubURLs",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "cleaning_tool_description": {
-        "message": "Ici, vous pouvez déposer des URL et ClearURLs les nettoiera par un clic sur le bouton vert. Vous pouvez mettre plusieurs URL mais chaque URL devra être mise sur une ligne séparée.",
+        "message": "Ici, vous pouvez déposer des URL et ScrubURLs les nettoiera par un clic sur le bouton vert. Vous pouvez mettre plusieurs URL mais chaque URL devra être mise sur une ligne séparée.",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Site Internet bloqué par <b>ClearURLs</b>",
+        "message": "Site Internet bloqué par <b>ScrubURLs</b>",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "blocked_html_body": {
-        "message": "Ce site Internet a été bloqué par l’extension <b>ClearURLs</b> ; il est identifié comme étant problématique, soit publicitaire, soit d’espionnage ; vous pouvez désactiver temporairement le blocage du site soit dans les paramétres, soit dans l’extension afin de vous y connecter. Il vous faudra raffraichir la page, soit par le navigateur, soit avec le bouton ci-dessous.",
+        "message": "Ce site Internet a été bloqué par l’extension <b>ScrubURLs</b> ; il est identifié comme étant problématique, soit publicitaire, soit d’espionnage ; vous pouvez désactiver temporairement le blocage du site soit dans les paramétres, soit dans l’extension afin de vous y connecter. Il vous faudra raffraichir la page, soit par le navigateur, soit avec le bouton ci-dessous.",
         "description": "Sert à afficher la description de la fonction sur la page des options."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "Sert à afficher la description de la fonction sur la switch."
     },
     "watchdog": {
-        "message": "[ClearURLs]: Watchdog, très petit programme qui surveille les attaques de la mémoire vive, a détecté $TIMES$ problème(s)",
+        "message": "[ScrubURLs]: Watchdog, très petit programme qui surveille les attaques de la mémoire vive, a détecté $TIMES$ problème(s)",
         "description": "Utilisé pour la description du Watchdog.",
         "placeholders": {
             "times": {

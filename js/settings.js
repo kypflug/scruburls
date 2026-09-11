@@ -1,7 +1,7 @@
 /*
- * ClearURLs (Manifest V3 port)
+ * ScrubURLs (unofficial Manifest V3 port of ClearURLs)
  * Copyright (c) 2017-2025 Kevin Röbert (original ClearURLs)
- * Copyright (c) 2026 ClearURLs MV3 port contributors
+ * Copyright (c) 2026 ScrubURLs contributors
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -114,7 +114,7 @@ function setText() {
 }
 
 /**
- * Exports all ClearURLs settings with statistics and rules.
+ * Exports all settings with statistics and rules (ClearURLs.conf format).
  */
 async function exportSettings() {
     try {

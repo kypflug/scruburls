@@ -28,11 +28,11 @@
         "description": "This string is used on blocked domains in the ClearURLs log."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Dodano nasłuchiwanie dziennika.",
+        "message": "[ScrubURLs]: Dodano nasłuchiwanie dziennika.",
         "description": "This string is used on ClearURLs log startup."
     },
     "log_html_page_title": {
-        "message": "Dziennik ClearURLs",
+        "message": "Dziennik ScrubURLs",
         "description": "This string is used as header on the log page."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "This string is used as name for the filter switch button on the popup page."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "Przełącznik filtra aktywuje funkcję oczyszczania ClearURLs. Jeśli wyłączysz tę funkcję, dodatek przestanie działać.",
+        "message": "Przełącznik filtra aktywuje funkcję oczyszczania ScrubURLs. Jeśli wyłączysz tę funkcję, dodatek przestanie działać.",
         "description": "This string is used as title for the filter switch button on the popup page."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Currently not used."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Zapisz na dysku.",
+        "message": "[ScrubURLs]: Zapisz na dysku.",
         "description": "This string is used to tell the user, that ClearURLs saved the settings on disk."
     },
     "core_error": {
-        "message": "[ClearURLs]: Dodatek nie mógł się uruchomić.",
+        "message": "[ScrubURLs]: Dodatek nie mógł się uruchomić.",
         "description": "This string is used to tell the user, that ClearURLs could not be started."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "This string is used as title for the statistics switch button on the popup page."
     },
     "settings_html_page_title": {
-        "message": "Ustawienia ClearURLs",
+        "message": "Ustawienia ScrubURLs",
         "description": "This string is used as title on the settings page."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "This string is used as name for the history API listener label."
     },
     "cleaning_tool_page_title": {
-        "message": "Narzędzie do czyszczenia ClearURLs",
+        "message": "Narzędzie do czyszczenia ScrubURLs",
         "description": "This string is used as title on the cleaning tool page."
     },
     "cleaning_tool_description": {
-        "message": "ClearURLs pozwala na wklejenie adresu URL i oczyszczenie go po wciśnięciu zielonego przycisku. Można wkleić wiele adresów URL jednocześnie, ale każdy z nich powinien być w osobnej linii.",
+        "message": "ScrubURLs pozwala na wklejenie adresu URL i oczyszczenie go po wciśnięciu zielonego przycisku. Można wkleić wiele adresów URL jednocześnie, ale każdy z nich powinien być w osobnej linii.",
         "description": "This string is used as description of the cleaning tool."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Ta strona została zablokowana przez <b>ClearURLs</b>",
+        "message": "Ta strona została zablokowana przez <b>ScrubURLs</b>",
         "description": "This string is used as title on the blocked site page."
     },
     "blocked_html_body": {
-        "message": "Ta strona została zablokowana przez dodatek <b>ClearURLs</b>, ponieważ identyfikujemy tę witrynę jako usługę reklamową i/lub śledzenia. Aby odwiedzić tę witrynę, musisz tymczasowo dezaktywować dodatek lub wyłączyć blokowanie domeny w ustawieniach ClearURLs. Następnie możesz kliknąć przycisk poniżej, aby załadować stronę.",
+        "message": "Ta strona została zablokowana przez dodatek <b>ScrubURLs</b>, ponieważ identyfikujemy tę witrynę jako usługę reklamową i/lub śledzenia. Aby odwiedzić tę witrynę, musisz tymczasowo dezaktywować dodatek lub wyłączyć blokowanie domeny w ustawieniach ScrubURLs. Następnie możesz kliknąć przycisk poniżej, aby załadować stronę.",
         "description": "This string is used as body on the blocked site page."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "This string is used as title for the referral marketing switch"
     },
     "watchdog": {
-        "message": "[ClearURLs]: Strażnik wykrył problem i już zawiódł $TIMES$ razy.",
+        "message": "[ScrubURLs]: Strażnik wykrył problem i już zawiódł $TIMES$ razy.",
         "description": "This string is used as text for the watchdog",
         "placeholders": {
             "times": {

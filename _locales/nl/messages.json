@@ -28,11 +28,11 @@
         "description": "Deze tekenreeks wordt gebruikt in het ClearURLs-logboek voor geblokkeerde domeinen."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Logboek is toegevoegd",
+        "message": "[ScrubURLs]: Logboek is toegevoegd",
         "description": "Deze tekenreeks wordt gebruikt zodra het aanleggen van het ClearURLs-logboek begonnen is."
     },
     "log_html_page_title": {
-        "message": "ClearURLs-logboek",
+        "message": "ScrubURLs-logboek",
         "description": "Deze tekenreeks wordt gebruikt als titel van het logboek."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "Deze tekenreeks wordt gebruikt als naam van de filterknop op de pop-uppagina."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "De filterknop activeert de opschoonfunctionaliteit van ClearURLs. Als je deze uitschakelt, dan schakel je de hele add-on uit.",
+        "message": "De filterknop activeert de opschoonfunctionaliteit van ScrubURLs. Als je deze uitschakelt, dan schakel je de hele add-on uit.",
         "description": "Deze tekenreeks wordt gebruikt als naam van de filterknop op de pop-uppagina."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Wordt momenteel niet gebruikt."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Opgeslagen op schijf.",
+        "message": "[ScrubURLs]: Opgeslagen op schijf.",
         "description": "Deze tekenreeks wordt gebruikt om te melden dat de instellingen zijn opgeslagen op de schijf."
     },
     "core_error": {
-        "message": "[ClearURLs]: De add-on kan niet worden gestart.",
+        "message": "[ScrubURLs]: De add-on kan niet worden gestart.",
         "description": "Deze tekenreeks wordt gebruikt om te melden dat ClearURLs niet kan worden gestart."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "Deze tekenreeks wordt gebruikt als naam van de statistiekenknop op de pop-uppagina."
     },
     "settings_html_page_title": {
-        "message": "ClearURLs-instellingen",
+        "message": "ScrubURLs-instellingen",
         "description": "Deze tekenreeks wordt gebruikt als naam van de instellingenpagina."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "Deze tekenreeks wordt gebruikt als naam van het geschiedenis-api-label."
     },
     "cleaning_tool_page_title": {
-        "message": "ClearURLs-opschoongereedschap",
+        "message": "ScrubURLs-opschoongereedschap",
         "description": "Deze tekenreeks wordt gebruikt als naam van de opschoongereedschapspagina."
     },
     "cleaning_tool_description": {
-        "message": "Met dit hulpmiddel kun je url's plakken die ClearURLs met één klik op de groene knop voor je opschoont. Je kunt meerdere url's plakken (één per regel).",
+        "message": "Met dit hulpmiddel kun je url's plakken die ScrubURLs met één klik op de groene knop voor je opschoont. Je kunt meerdere url's plakken (één per regel).",
         "description": "Deze tekenreeks wordt gebruikt als omschrijving van het opschoongereedschap."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Deze site is geblokkeerd door <b>ClearURLs</b>",
+        "message": "Deze site is geblokkeerd door <b>ScrubURLs</b>",
         "description": "Deze tekenreeks wordt gebruikt als naam van de geblokkeerde pagina."
     },
     "blocked_html_body": {
-        "message": "Deze site is geblokkeerd door de <b>ClearURLs</b>-add-on omdat deze herkend is als een advertentie- en/of trackingdienst. Om deze site tóch te bezoeken, moet je de add-on tijdelijk uitschakelen of het blokkeren van domeinen uitschakelen in de instellingen. Klik daarna op onderstaande knop om de pagina te herladen.",
+        "message": "Deze site is geblokkeerd door de <b>ScrubURLs</b>-add-on omdat deze herkend is als een advertentie- en/of trackingdienst. Om deze site tóch te bezoeken, moet je de add-on tijdelijk uitschakelen of het blokkeren van domeinen uitschakelen in de instellingen. Klik daarna op onderstaande knop om de pagina te herladen.",
         "description": "Deze tekenreeks wordt gebruikt als inhoud van de geblokkeerde pagina."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "Deze tekenreeks wordt gebruikt als naam van de doorverwijzingsmarketingknop"
     },
     "watchdog": {
-        "message": "[ClearURLs]: De 'watchdog' is tegen een probleem aangelopen en is al $TIMES$ keer mislukt.",
+        "message": "[ScrubURLs]: De 'watchdog' is tegen een probleem aangelopen en is al $TIMES$ keer mislukt.",
         "description": "Deze tekenreeks wordt gebruikt als tekst bij de 'watchdog'",
         "placeholders": {
             "times": {

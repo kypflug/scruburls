@@ -28,11 +28,11 @@
         "description": "Questa stringa è usata per i domini bloccati nel log di ClearURLs."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Log listener è stato aggiunto.",
+        "message": "[ScrubURLs]: Log listener è stato aggiunto.",
         "description": "Questa stringa è usata all'avvio del log di ClearURLs."
     },
     "log_html_page_title": {
-        "message": "Log di ClearURLs",
+        "message": "Log di ScrubURLs",
         "description": "Questa stringa viene utilizzata come header nella pagina di log."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "Questa stringa è usata come nome per il pulsante di attivazione del filtro nella pagina popup."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "L'interruttore dei filtri attiva la funzione di pulizia di ClearURLs. Se si disabilita questa opzione, l'intero componente aggiuntivo è disabilitato.",
+        "message": "L'interruttore dei filtri attiva la funzione di pulizia di ScrubURLs. Se si disabilita questa opzione, l'intero componente aggiuntivo è disabilitato.",
         "description": "Questa stringa è usata come titolo per il pulsante di attivazione del filtro nella pagina popup."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Attualmente non utilizzato."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Salva sul disco.",
+        "message": "[ScrubURLs]: Salva sul disco.",
         "description": "Questa stringa è usata per dire all'utente che ClearURLs ha salvato le impostazioni su disco."
     },
     "core_error": {
-        "message": "[ClearURLs]: Il componente aggiuntivo non può essere avviato.",
+        "message": "[ScrubURLs]: Il componente aggiuntivo non può essere avviato.",
         "description": "Questa stringa è usata per dire all'utente che ClearURLs non può essere avviato."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "Questa stringa è usata come titolo per il pulsante di attivazione delle statistiche nella pagina popup."
     },
     "settings_html_page_title": {
-        "message": "Impostazioni da ClearURLs",
+        "message": "Impostazioni da ScrubURLs",
         "description": "Questa stringa è usata come titolo nella pagina delle impostazioni."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "This string is used as name for the history API listener label."
     },
     "cleaning_tool_page_title": {
-        "message": "Strumento di pulizia di ClearURLs",
+        "message": "Strumento di pulizia di ScrubURLs",
         "description": "This string is used as title on the cleaning tool page."
     },
     "cleaning_tool_description": {
-        "message": "Con questo strumento è possibile incollare URL che ClearURLs pulirà facendo clic sul pulsante verde. È possibile incollare più URL contemporaneamente, indica un singolo URL per riga.",
+        "message": "Con questo strumento è possibile incollare URL che ScrubURLs pulirà facendo clic sul pulsante verde. È possibile incollare più URL contemporaneamente, indica un singolo URL per riga.",
         "description": "Questa stringa viene utilizzata come descrizione dello strumento di pulizia."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Questo sito è stato bloccato da <b>ClearURLs</b>",
+        "message": "Questo sito è stato bloccato da <b>ScrubURLs</b>",
         "description": "This string is used as title on the blocked site page."
     },
     "blocked_html_body": {
-        "message": "Questo sito è stato bloccato da <b>ClearURLs</b> perché è stato identificato come sito web di advertising e/o servizio di tracciamento. Per visitare questo sito web devi temporaneamente disattivare il componente aggiuntivo. Dopo aver disattivato ClearURLs potrai fare clic sul pulsante qui sotto per ricaricare la pagina.",
+        "message": "Questo sito è stato bloccato da <b>ScrubURLs</b> perché è stato identificato come sito web di advertising e/o servizio di tracciamento. Per visitare questo sito web devi temporaneamente disattivare il componente aggiuntivo. Dopo aver disattivato ScrubURLs potrai fare clic sul pulsante qui sotto per ricaricare la pagina.",
         "description": "Questa stringa viene utilizzata come corpo della pagina del sito bloccato."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "This string is used as title for the referral marketing switch"
     },
     "watchdog": {
-        "message": "[ClearURLs]: Il sistema di controllo ha identificato un problema. ClearURLs verrà riavviato.",
+        "message": "[ScrubURLs]: Il sistema di controllo ha identificato un problema. ScrubURLs verrà riavviato.",
         "description": "This string is used as text for the watchdog",
         "placeholders": {
             "times": {

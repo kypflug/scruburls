@@ -28,11 +28,11 @@
         "description": "Ta niz je uporabljen za blokirane domene v ClearURLs dnevniku."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Dodan je poslušalec dnevnika",
+        "message": "[ScrubURLs]: Dodan je poslušalec dnevnika",
         "description": "Ta niz je uporabljen pri zagonu ClearURLs dnevnika."
     },
     "log_html_page_title": {
-        "message": "Dnevnik ClearURLs",
+        "message": "Dnevnik ScrubURLs",
         "description": "Ta niz je uporabljen kot glava na strani dnevnika."
     },
     "log_html_table_head_1": {
@@ -68,7 +68,7 @@
         "description": "Ta niz je uporabljen kot oznaka stikala za filter na pojavni strani."
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "Stikalo filtra vklopi funkcijo čiščenja v dodatku ClearURLs. Če to funkcijo izklopite, bo celoten dodatek onemogočen.",
+        "message": "Stikalo filtra vklopi funkcijo čiščenja v dodatku ScrubURLs. Če to funkcijo izklopite, bo celoten dodatek onemogočen.",
         "description": "Ta niz je uporabljen kot naziv stikala za filter na pojavni strani."
     },
     "popup_html_configs_switch_log": {
@@ -132,11 +132,11 @@
         "description": "Trenutno ni v uporabi."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Shrani na disk.",
+        "message": "[ScrubURLs]: Shrani na disk.",
         "description": "Ta niz je uporabljen kot sporočilo uporabniku, da je ClearURLs shranil nastavitve na disk."
     },
     "core_error": {
-        "message": "[ClearURLs]: Razširitev se ni mogla zagnati.",
+        "message": "[ScrubURLs]: Razširitev se ni mogla zagnati.",
         "description": "Ta niz je uporabljen kot sporočilo uporabniku, da se ClearURLs ni mogel zagnati."
     },
     "configs_switch_statistics": {
@@ -148,7 +148,7 @@
         "description": "Ta niz je uporabljen kot naziv stikala za statistiko na pojavni strani."
     },
     "settings_html_page_title": {
-        "message": "ClearURLs nastavitve",
+        "message": "ScrubURLs nastavitve",
         "description": "Ta niz je uporabljen kot naslov strani za nastavitve."
     },
     "badged_color_label": {
@@ -212,11 +212,11 @@
         "description": "Ta niz se uporablja kot naziv oznake za API poslušalca zgodovine."
     },
     "cleaning_tool_page_title": {
-        "message": "ClearURLs orodje za čiščenje",
+        "message": "ScrubURLs orodje za čiščenje",
         "description": "Ta niz se uporablja kot naslov strani orodja za čiščenje."
     },
     "cleaning_tool_description": {
-        "message": "S tem orodjem je možno prilepiti URL-je. ClearURLs jih bo počistil po kliku na zelen gumb. Prilepi se lahko več URL-jev naenkrat, ampak mora biti vsak URL v posamezni vrstici.",
+        "message": "S tem orodjem je možno prilepiti URL-je. ScrubURLs jih bo počistil po kliku na zelen gumb. Prilepi se lahko več URL-jev naenkrat, ampak mora biti vsak URL v posamezni vrstici.",
         "description": "Ta niz se uporablja kot opis orodja za čiščenje."
     },
     "cleaning_tool_btn": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "To stran je blokiral <b>ClearURLs</b>",
+        "message": "To stran je blokiral <b>ScrubURLs</b>",
         "description": "Ta niz je uporabljen kot naslov na strani blokiranega spletnega mesta."
     },
     "blocked_html_body": {
-        "message": "To stran je blokirala razširitev <b>ClearURLs</b>, ker je bila stran identificirana kot oglaševalska in/ali sledilna storitev. Če želite obiskati to stran, morate začasno onemogočiti razširitev ali izklopiti blokiranje domen v nastavitvah ClearURLs. Za tem lahko pritisnete spodnji gumb, da naložite stran.",
+        "message": "To stran je blokirala razširitev <b>ScrubURLs</b>, ker je bila stran identificirana kot oglaševalska in/ali sledilna storitev. Če želite obiskati to stran, morate začasno onemogočiti razširitev ali izklopiti blokiranje domen v nastavitvah ScrubURLs. Za tem lahko pritisnete spodnji gumb, da naložite stran.",
         "description": "Ta niz se uporablja kot telo na strani blokiranega spletnega mesta."
     },
     "blocked_html_button": {
@@ -302,7 +302,7 @@
         "description": "Ta niz se uporablja kot naziv stikala za napotitveno trženje."
     },
     "watchdog": {
-        "message": "[ClearURLs]: Čuvaj je zaznal težavo in je spodletel že $TIMES$-krat.",
+        "message": "[ScrubURLs]: Čuvaj je zaznal težavo in je spodletel že $TIMES$-krat.",
         "description": "Ta niz se uporablja kot besedilo za čuvaja.",
         "placeholders": {
             "times": {

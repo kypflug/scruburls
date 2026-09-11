@@ -1,7 +1,7 @@
 {
-  "name": "clearurls-mv3",
+  "name": "scruburls",
   "version": "2.0.0",
-  "description": "Manifest V3 port of the ClearURLs browser extension",
+  "description": "ScrubURLs: an unofficial Manifest V3 port of the ClearURLs browser extension",
   "private": true,
   "type": "module",
   "license": "LGPL-3.0-or-later",

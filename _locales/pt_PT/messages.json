@@ -28,11 +28,11 @@
         "description": "Esta expressão é usada em domínios bloqueados no relatório do CleanURLs."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: foi adicionado o registo no relatório.",
+        "message": "[ScrubURLs]: foi adicionado o registo no relatório.",
         "description": "Esta expressão é usada ao iniciar o relatório do CleanURLs."
     },
     "log_html_page_title": {
-        "message": "Relatório do ClearURLs",
+        "message": "Relatório do ScrubURLs",
         "description": "Esta expressão é usada como cabeçalho na página do relatório."
     },
     "log_html_table_head_1": {
@@ -61,7 +61,7 @@
         "message": "Filtrar"
     },
     "popup_html_configs_switch_filter_title": {
-        "message": "O interruptor do filtro controla a função de limpeza de hiperligações do ClearURLs. Se desativar esta opção, a extensão será desativada."
+        "message": "O interruptor do filtro controla a função de limpeza de hiperligações do ScrubURLs. Se desativar esta opção, a extensão será desativada."
     },
     "popup_html_configs_switch_log": {
         "message": "Relatório"
@@ -109,10 +109,10 @@
         "message": "Reporta o URL atual deste separador."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: guardar definições no disco."
+        "message": "[ScrubURLs]: guardar definições no disco."
     },
     "core_error": {
-        "message": "[ClearURLs]: não foi possível iniciar a extensão."
+        "message": "[ScrubURLs]: não foi possível iniciar a extensão."
     },
     "configs_switch_statistics": {
         "message": "Estatísticas"
@@ -121,7 +121,7 @@
         "message": "Ativar ou desativar a função de estatística"
     },
     "settings_html_page_title": {
-        "message": "Definições do ClearURLs"
+        "message": "Definições do ScrubURLs"
     },
     "badged_color_label": {
         "message": "Cor dos URLs limpos"
@@ -169,7 +169,7 @@
         "message": "Prevenir injeção de rastreadores com a API do histórico (ver mais: <a href='https://developer.mozilla.org/pt-BR/docs/Web/API/History_API#O_m%C3%A9todo_replaceState()' target='_blank'>O método replaceState()</a>)"
     },
     "cleaning_tool_page_title": {
-        "message": "Ferramenta de limpeza ClearURLs"
+        "message": "Ferramenta de limpeza ScrubURLs"
     },
     "cleaning_tool_description": {
         "message": "Com esta ferramenta pode colar URLs e o CleanURLs irá limpar os URLs após clicar no botão verde. Pode colar vários URLs de uma vez, mas cada um deles em de estar numa linha separada."
@@ -223,10 +223,10 @@
         }
     },
     "blocked_html_title": {
-        "message": "Este site foi bloqueado pelo <b>ClearURLs</b>"
+        "message": "Este site foi bloqueado pelo <b>ScrubURLs</b>"
     },
     "blocked_html_body": {
-        "message": "Este site foi bloqueado pela extensão <b>ClearURLs</b>, porque identificámos este site como um serviço de publicidade e/ou rastreamento. Para visitar este site, deve desativar a extensão temporariamente ou desativar o bloqueio de domínio nas definições da extensão. Depois, clique no botão abaixo para carregar a página."
+        "message": "Este site foi bloqueado pela extensão <b>ScrubURLs</b>, porque identificámos este site como um serviço de publicidade e/ou rastreamento. Para visitar este site, deve desativar a extensão temporariamente ou desativar o bloqueio de domínio nas definições da extensão. Depois, clique no botão abaixo para carregar a página."
     },
     "blocked_html_button": {
         "message": "Visitar página"
@@ -238,7 +238,7 @@
         "message": "Permite marketing com referências"
     },
     "watchdog": {
-        "message": "[ClearURLs]: o \"cão de vigia\" detetou um problema e já falhou $TIMES$ vezes.",
+        "message": "[ScrubURLs]: o \"cão de vigia\" detetou um problema e já falhou $TIMES$ vezes.",
         "placeholders": {
             "times": {
                 "content": "$1",

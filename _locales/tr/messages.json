@@ -28,11 +28,11 @@
         "description": "Bu dize ClearURL'ler günlüğündeki engellenen alan adlarında kullanılır."
     },
     "check_os_log": {
-        "message": "[ClearURLs]: Günlük dinleyicisi eklendi.",
+        "message": "[ScrubURLs]: Günlük dinleyicisi eklendi.",
         "description": "Bu dize ClearURLs log başlangıcında kullanılır."
     },
     "log_html_page_title": {
-        "message": "ClearURLs'dan Günlük",
+        "message": "ScrubURLs'dan Günlük",
         "description": "Bu dize, günlük sayfasında üstbilgi olarak kullanılır."
     },
     "log_html_table_head_1": {
@@ -132,11 +132,11 @@
         "description": "Şu anda kullanılmamış."
     },
     "core_save_on_disk": {
-        "message": "[ClearURLs]: Diske kaydedin.",
+        "message": "[ScrubURLs]: Diske kaydedin.",
         "description": "Bu dize, kullanıcıya ClearURL'lerin ayarları diske kaydettiğini söylemek için kullanılır."
     },
     "core_error": {
-        "message": "[ClearURLs]: Eklenti başlatılamadı.",
+        "message": "[ScrubURLs]: Eklenti başlatılamadı.",
         "description": "Bu dize, kullanıcıya ClearURL'lerin başlatılamadığını söylemek için kullanılır."
     },
     "configs_switch_statistics": {
@@ -282,11 +282,11 @@
         }
     },
     "blocked_html_title": {
-        "message": "Bu site tarafından engellendi <b>ClearURLs</b>",
+        "message": "Bu site tarafından engellendi <b>ScrubURLs</b>",
         "description": "Bu dize engellenen site sayfasında başlık olarak kullanılır."
     },
     "blocked_html_body": {
-        "message": "Bu site tarafından engellendi <b>ClearURLs</b> Eklentisi, çünkü bu siteyi bir reklamcılık ve / veya izleme hizmeti olarak tanımlıyoruz. Bu siteyi ziyaret etmek için Eklentiyi geçici olarak devre dışı bırakmanız gerekir. ClearURL'leri devre dışı bıraktıktan sonra sayfayı yüklemek için aşağıdaki düğmeye tıklayabilirsiniz.",
+        "message": "Bu site tarafından engellendi <b>ScrubURLs</b> Eklentisi, çünkü bu siteyi bir reklamcılık ve / veya izleme hizmeti olarak tanımlıyoruz. Bu siteyi ziyaret etmek için Eklentiyi geçici olarak devre dışı bırakmanız gerekir. ClearURL'leri devre dışı bıraktıktan sonra sayfayı yüklemek için aşağıdaki düğmeye tıklayabilirsiniz.",
         "description": "Bu dize engellenen site sayfasında gövde olarak kullanılır."
     },
     "blocked_html_button": {
